@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('mono-social-icons-1.10/mono-social-icons.eot');
+    src: url('mono-social-icons-1.10/mono-social-icons.eot?#iefix') format('embedded-opentype'),
+         url('mono-social-icons-1.10/mono-social-icons.woff') format('woff'),
+         url('mono-social-icons-1.10/mono-social-icons.ttf') format('truetype'),
+         url('mono-social-icons-1.10/mono-social-icons.svg#mono-social-icons') format('svg');
+    src: url('mono-social-icons-1.10/mono-social-icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

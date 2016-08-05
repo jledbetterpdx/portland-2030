@@ -1,0 +1,331 @@
+html
+{
+    height: 100%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html *
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #f2f6f8;
+    background: -moz-linear-gradient(top, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f6f8), color-stop(50%,#d8e1e7), color-stop(51%,#b5c6d0), color-stop(100%,#e0eff9));
+    background: -webkit-linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background: -o-linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background: -ms-linear-gradient(top, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    background: linear-gradient(to bottom, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+    color: #111;
+    height: 100%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    font: normal normal 18px Lato, sans-serif;
+}
+
+h1
+{
+    font: normal bold 1.7rem Lato, sans-serif;
+    margin: 0.6rem 0;
+}
+
+h2
+{
+    font: normal bold 1.4rem Lato, sans-serif;
+    margin: 0.51rem 0;
+}
+
+ul
+{
+    padding-left: 2em;
+}
+
+input,
+select,
+textarea
+{
+    font: normal normal 1em Lato, sans-serif;
+}
+
+input.short
+{
+    width: 100px;
+}
+
+input.long
+{
+    width: 400px;
+}
+
+textarea.small
+{
+    width: 250px;
+    height: 125px;
+}
+
+textarea.big
+{
+    width: 600px;
+    height: 450px;
+}
+
+table tbody th,
+table tbody td
+{
+    text-align: left;
+    vertical-align: top;
+}
+
+div.examples
+{
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+    color: #333;
+    font: italic bold 0.8em Lato, sans-serif;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 100;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+code
+{
+    font: normal normal 1em "Courier New", Courier, monospace;
+}
+
+span.required
+{
+    display: inline-block;
+    float: right;
+    position: relative;
+    color: #f00;
+    margin: 0 5px;
+}
+
+p
+{
+    margin: 0 0 10px;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.left
+{
+    text-align: left;
+}
+
+.justified
+{
+    text-align: justify;
+}
+
+a
+{
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dotted #111;
+}
+
+a[href^="mailto"]
+{
+    position: relative;
+    padding-left: 20px;
+}
+
+a[href^="mailto"]:before
+{
+    position: absolute;
+    font-family: FontAwesome;
+    top: 3px;
+    left: 0;
+    border-bottom: none;
+    content: "\f0e0";
+}
+
+section.debug
+{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: #555;
+    font-size: 0.75rem;
+    pointer-events: none;
+    width: 250px;
+}
+
+header
+{
+    display: block;
+    position: relative;
+    float: left;
+    width: 14vw;
+}
+
+header nav a
+{
+    border-bottom: none;
+}
+
+header nav > ul
+{
+    font-size: 1.1rem;
+}
+
+header nav ul li
+{
+    margin: 8px 2px;
+    font-weight: bold;
+}
+
+header nav ul li i.fa
+{
+    font-weight: normal;
+    color: #000;
+}
+
+header nav ul li:hover i.fa
+{
+    color: #555;
+}
+
+header nav ul li.add:hover i.fa
+{
+    color: #09812e;
+}
+
+header nav ul li.edit:hover i.fa
+{
+    color: #d78700;
+}
+
+header nav ul li.remove:hover i.fa,
+header nav ul li.delete:hover a,
+header nav ul li.delete:hover i.fa
+{
+    color: #d7061b;
+}
+
+header nav ul li.access:hover i.fa
+{
+    color: #d7c124;
+}
+
+header nav ul li.refresh:hover i.fa
+{
+    color: #616efc;
+}
+
+header nav ul > ul
+{
+    margin-left: 0.7rem !important;
+    font-size: 0.9em;
+}
+
+#map
+{
+    height: 200px;
+    width: 400px;
+}
+
+.help a:link,
+.help a:visited
+{
+    color: rgba(153, 153, 255, 0.5);
+}
+
+.help a:active,
+.help a:hover
+{
+    color: rgb(153, 153, 255);
+    cursor: help;
+}
+
+.admin-icon.edit:hover
+{
+    color: #d78700;
+}
+
+.admin-icon.cancel:hover,
+.admin-icon.delete:hover
+{
+    color: #d7061b;
+}
+
+.admin-icon.refresh:hover
+{
+    color: #616efc;
+}
+
+.admin-icon.disabled
+{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.admin-icon.disabled:hover
+{
+    cursor: not-allowed;
+}
+
+.admin-icon
+{
+    color: #000;
+    text-decoration: none;
+    border-bottom: none;
+    margin: 4px 2px;
+}
+
+main
+{
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    width: 80vw;
+}
+
+main.fullwide
+{
+    left: 0 !important;
+}
+
+.hidden
+{
+    display: none;
+}
+
+form.hidden
+{
+    height: 0;
+    width: 0;
+}
+
+tr.add_row
+{
+    font-size: 1.15rem;
+}
+
+tr.add_row td a
+{
+    color: #09812e;
+}

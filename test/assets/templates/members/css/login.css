@@ -1,0 +1,613 @@
+/*/ Overall Styles /*/
+
+html, body
+{
+    overflow: hidden;
+}
+
+input, textarea, select, a
+{
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/*/ Buttons and icons /*/
+
+.icon
+{
+    position: relative;
+    display: inline-block;
+}
+
+.icon:before
+{
+    position: absolute;
+    font-family: FontAwesome;
+    bottom: 26px;
+    left: 25px;
+    border-bottom: none;
+    pointer-events: none;
+    color: hsl(0, 0%, 25%);
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.icon .textbox
+{
+    margin: 14px;
+    padding: 12px 12px 12px 36px;
+    border: 4px solid hsl(0, 0%, 80%);
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    -ms-transition: border 0.3s linear;
+    -o-transition: border 0.3s linear;
+    transition: border 0.3s linear;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: 0 1px 0 hsla(0, 0%, 80%, 0.9);
+}
+
+.icon .textbox:focus
+{
+    border: 4px solid hsl(0, 0%, 40%);
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    -ms-transition: border 0.3s linear;
+    -o-transition: border 0.3s linear;
+    transition: border 0.3s linear;
+}
+
+.icon .button
+{
+    min-width: 120px;
+    padding: 10px 10px 10px 37px;
+    margin: 14px;
+    text-align: left;
+    font-family: "Bebas Neue", Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 0 1px 0 hsla(0, 0%, 70%, 0.9);
+    color: hsl(0, 0%, 25%);
+    background: hsl(0, 0%, 93%);
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 85%) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0, 0%, 100%)), color-stop(100%,hsl(0, 0%, 85%)));
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 100%) 0%,hsl(0, 0%, 85%) 100%);
+    background: -o-radial-gradient(center, ellipse cover, hsl(0, 0%, 100%) 0%,hsl(0, 0%, 85%) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0, 0%, 100%) 0%,hsl(0, 0%, 85%) 100%);
+    background: radial-gradient(ellipse at center, hsl(0, 0%, 100%) 0%,hsl(0, 0%, 85%) 100%);
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: none;
+    letter-spacing: 0.16rem;
+}
+
+.icon .button:active
+{
+    background: hsl(0, 0%, 85%);
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0, 0%, 79%) 0%, hsl(0, 0%, 85%) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0, 0%, 79%)), color-stop(100%,hsl(0, 0%, 85%)));
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 79%) 0%,hsl(0, 0%, 85%) 100%);
+    background: -o-radial-gradient(center, ellipse cover, hsl(0, 0%, 79%) 0%,hsl(0, 0%, 85%) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0, 0%, 79%) 0%,hsl(0, 0%, 85%) 100%);
+    background: radial-gradient(ellipse at center, hsl(0, 0%, 79%) 0%,hsl(0, 0%, 85%) 100%);
+}
+
+.icon.icon-success:before
+{
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 1px 0 hsla(0, 0%, 30%, 0.9);
+}
+
+.icon.icon-success .button
+{
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 1px 0 hsla(0, 0%, 30%, 0.9);
+    background: hsl(145, 100%, 30%);
+    background: -moz-radial-gradient(center, ellipse cover, hsl(145, 100%, 30%) 0%, hsl(145, 100%, 22%) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(145, 100%, 30%)), color-stop(100%,hsl(145, 100%, 22%)));
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(145, 100%, 30%) 0%,hsl(145, 100%, 22%) 100%);
+    background: -o-radial-gradient(center, ellipse cover, hsl(145, 100%, 30%) 0%,hsl(145, 100%, 22%) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, hsl(145, 100%, 30%) 0%,hsl(145, 100%, 22%) 100%);
+    background: radial-gradient(ellipse at center, hsl(145, 100%, 30%) 0%,hsl(145, 100%, 22%) 100%);
+}
+
+.icon.icon-success .button:active
+{
+    background: hsl(145, 100%, 22%);
+    background: -moz-radial-gradient(center, ellipse cover, hsl(145, 100%, 19%) 0%, hsl(145, 100%, 22%) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(145, 100%, 19%)), color-stop(100%,hsl(145, 100%, 22%)));
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(145, 100%, 19%) 0%,hsl(145, 100%, 22%) 100%);
+    background: -o-radial-gradient(center, ellipse cover, hsl(145, 100%, 19%) 0%,hsl(145, 100%, 22%) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, hsl(145, 100%, 19%) 0%,hsl(145, 100%, 22%) 100%);
+    background: radial-gradient(ellipse at center, hsl(145, 100%, 19%) 0%,hsl(145, 100%, 22%) 100%);
+}
+
+.icon.icon-alert:before
+{
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 1px 0 hsla(0, 0%, 30%, 0.9);
+}
+
+.icon.icon-alert .button
+{
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 1px 0 hsla(0, 0%, 30%, 0.9);
+    background: hsl(0, 100%, 48%);
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0, 100%, 48%) 0%, hsl(0, 100%, 40%) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0, 100%, 48%)), color-stop(100%,hsl(0, 100%, 40%)));
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 48%) 0%,hsl(0, 100%, 40%) 100%);
+    background: -o-radial-gradient(center, ellipse cover, hsl(0, 100%, 48%) 0%,hsl(0, 100%, 40%) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0, 100%, 48%) 0%,hsl(0, 100%, 40%) 100%);
+    background: radial-gradient(ellipse at center, hsl(0, 100%, 48%) 0%,hsl(0, 100%, 40%) 100%);
+}
+
+.icon.icon-alert .button:active
+{
+    background: hsl(0, 100%, 40%);
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0, 100%, 34%) 0%, hsl(0, 100%, 40%) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0, 100%, 34%)), color-stop(100%,hsl(0, 100%, 40%)));
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 34%) 0%,hsl(0, 100%, 40%) 100%);
+    background: -o-radial-gradient(center, ellipse cover, hsl(0, 100%, 34%) 0%,hsl(0, 100%, 40%) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0, 100%, 34%) 0%,hsl(0, 100%, 40%) 100%);
+    background: radial-gradient(ellipse at center, hsl(0, 100%, 34%) 0%,hsl(0, 100%, 40%) 100%);
+}
+
+.icon.icon-disabled:before
+{
+    color: hsl(0, 0%, 40%);
+    text-shadow: 0 1px 0 hsla(0, 0%, 90%, 1);
+}
+
+.icon.icon-disabled .button
+{
+    color: #666;
+    text-shadow: 0 1px 0 hsla(0, 0%, 90%, 1);
+    background: hsl(0, 0%, 65%);
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0, 0%, 75%) 0%, hsl(0, 0%, 60%) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0, 0%, 75%)), color-stop(100%,hsl(0, 0%, 60%)));
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 75%) 0%,hsl(0, 0%, 60%) 100%);
+    background: -o-radial-gradient(center, ellipse cover, hsl(0, 0%, 75%) 0%,hsl(0, 0%, 60%) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0, 0%, 75%) 0%,hsl(0, 0%, 60%) 100%);
+    background: radial-gradient(ellipse at center, hsl(0, 0%, 75%) 0%,hsl(0, 0%, 60%) 100%);
+    cursor: not-allowed;
+}
+
+.shadowed
+{
+    background-color: hsla(0, 0%, 0%, 0.08);
+    -moz-box-shadow: 0 0 40px 40px hsla(0, 0%, 0%, 0.08);
+    -webkit-box-shadow: 0 0 40px 40px hsla(0, 0%, 0%, 0.08);
+    box-shadow: 0 0 40px 40px hsla(0, 0%, 0%, 0.08);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.condensed
+{
+    margin-bottom: -5px;
+}
+
+.overlap-below
+{
+    margin-bottom: -28px;
+}
+
+.overlap-below input,
+.overlap-below input:focus
+{
+    border-bottom-width: 2px !important;
+}
+
+.overlapped-above input,
+.overlapped-above input:focus
+{
+    border-top-width: 2px !important;
+}
+
+section.background
+{
+    width: 100vw;
+    height: 619px;
+    position: absolute;
+    top: 12vh !important;
+    left: 0 !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+}
+
+section.background.carpet
+{
+    background-image: url('../img/bg/pdx-carpet.jpg');
+}
+
+section.background.hood
+{
+    background-image: url('../img/bg/pdx-hood.jpg');
+}
+
+section.background.cherry-blossom
+{
+    background-image: url('../img/bg/pdx-cherry-blossom.jpg');
+}
+
+section.background.downtown
+{
+    background-image: url('../img/bg/pdx-downtown.jpg');
+}
+
+/*/ Login window /*/
+
+#login_window
+{
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    width: 516px;
+    padding: 7px;
+    text-align: left;
+}
+
+#login_window input[type="text"],
+#login_window input[type="password"]
+{
+    width: 486px;
+    color: hsl(0, 0%, 33%);
+}
+
+#login_window #username_box:before,
+#login_window #password_box:before
+{
+    color: hsl(0, 0%, 33%);
+    left: 27px;
+    bottom: 29px;
+}
+
+#login_window #username_box:before
+{
+    content: "\f007";
+}
+
+#login_window #password_box:before
+{
+    content: "\f084";
+}
+
+#login_window #submit_box:before
+{
+    content: "\f090";
+}
+
+#login_window #submit_box.login-action:before
+{
+    content: "\f021";
+}
+
+#login_window #cancel_box:before
+{
+    content: "\f056";
+}
+
+#login_window #forgot_password
+{
+    display: block;
+    position: absolute;
+    right: 13px;
+    bottom: 23px;
+    font-size: 16px;
+}
+
+#login_window #forgot_password a
+{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-bottom: none;
+    cursor: help;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    -ms-opacity: 0.7;
+    -o-opacity: 0.7;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -ms-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    -webkit-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.9);
+    -moz-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.9);
+    -ms-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.9);
+    -o-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.9);
+    text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.9);
+}
+
+#login_window #forgot_password a:hover
+{
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -ms-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+
+#title
+{
+    color: hsl(0, 0%, 90%);
+    pointer-events: none;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    font-size: 2rem;
+    text-align: left;
+    -webkit-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.7);
+    -moz-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.7);
+    -ms-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.7);
+    -o-text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.7);
+    text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.7);
+}
+
+#title:before
+{
+    font-family: FontAwesome;
+    content: "\f1a5";
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 2px;
+    left: -36px;
+    border-bottom: none;
+    pointer-events: none;
+    font-weight: normal;
+    -webkit-animation: subtle_logo 30s infinite;
+    -moz-animation: subtle_logo 30s infinite;
+    -o-animation: subtle_logo 30s infinite;
+    animation: subtle_logo 30s infinite;
+    -webkit-text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.7);
+    -moz-text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.7);
+    -ms-text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.7);
+    -o-text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.7);
+    text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.7);
+}
+
+@-webkit-keyframes subtle_logo
+{
+    0%, 100% { color: rgba(255, 255, 255, 0.9); }
+    25%      { color: rgba(255, 204, 51, 0.9); }
+    50%      { color: rgba(204, 0, 51, 0.9); }
+    75%      { color: rgba(0, 51, 102, 0.9); }
+}
+
+@-moz-keyframes subtle_logo
+{
+    0%, 100% { color: rgba(255, 255, 255, 0.9); }
+    25%      { color: rgba(255, 204, 51, 0.9); }
+    50%      { color: rgba(204, 0, 51, 0.9); }
+    75%      { color: rgba(0, 51, 102, 0.9); }
+}
+
+@-o-keyframes subtle_logo
+{
+    0%, 100% { color: rgba(255, 255, 255, 0.9); }
+    25%      { color: rgba(255, 204, 51, 0.9); }
+    50%      { color: rgba(204, 0, 51, 0.9); }
+    75%      { color: rgba(0, 51, 102, 0.9); }
+}
+
+@keyframes subtle_logo
+{
+    0%, 100% { color: rgba(255, 255, 255, 0.9); }
+    25%      { color: rgba(255, 204, 51, 0.9); }
+    50%      { color: rgba(204, 0, 51, 0.9); }
+    75%      { color: rgba(0, 51, 102, 0.9); }
+}
+
+.accent1
+{
+    font-weight: bold;
+}
+
+.accent2
+{
+    font-weight: 900;
+}
+
+/*/ Forgot password /*/
+#forgot_password_window
+{
+    position: relative;
+    top: 180px;
+    margin: 0 auto;
+    width: 472px;
+    padding: 7px;
+    text-align: center;
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.95);
+    -webkit-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -moz-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -ms-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -o-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    letter-spacing: 0.1rem;
+}
+
+#forgot_password_window #username_box:before
+{
+    left: 27px;
+    bottom: 29px;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -ms-text-shadow: none;
+    -o-text-shadow: none;
+    text-shadow: none;
+    content: "\f007";
+}
+
+#forgot_password_window #send_box:before
+{
+    content: "\f1d8";
+}
+
+#forgot_password_window #back_box:before
+{
+    content: "\f137";
+}
+
+#forgot_password_window input[type="text"],
+#forgot_password_window input[type="password"]
+{
+    width: 250px;
+}
+
+/*/ Reset password /*/
+#reset_password_window
+{
+    position: relative;
+    top: 180px;
+    margin: 0 auto;
+    width: 472px;
+    padding: 7px;
+    text-align: center;
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.95);
+    -webkit-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -moz-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -ms-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -o-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    letter-spacing: 0.1rem;
+}
+
+#reset_password_window #username_box:before,
+#reset_password_window #password_box:before,
+#reset_password_window #password_confirm_box:before
+{
+    left: 27px;
+    bottom: 29px;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -ms-text-shadow: none;
+    -o-text-shadow: none;
+    text-shadow: none;
+}
+
+#reset_password_window #username_box:before
+{
+    content: "\f007";
+}
+
+#reset_password_window #password_box:before,
+#reset_password_window #password_confirm_box:before
+{
+    content: "\f084";
+}
+
+#reset_password_window #resetpass_box:before
+{
+    content: "\f01e";
+}
+
+#reset_password_window #back_box:before
+{
+    content: "\f137";
+}
+
+#reset_password_window input[type="text"],
+#reset_password_window input[type="password"]
+{
+    width: 300px;
+}
+
+#reset_password_window #password
+{
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#reset_password_window #password_confirm
+{
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Flash messages */
+#message
+{
+    position: absolute;
+    top: -60px;
+    left: 14px;
+    width: 500px;
+    padding: 6px 6px 6px 36px;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 1000;
+}
+
+#message,
+#message:before
+{
+    color: hsla(0, 0%, 100%, 0.95);
+    -webkit-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -moz-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -ms-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    -o-text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+    text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.7);
+}
+
+#message:before
+{
+    position: absolute;
+    font-family: FontAwesome;
+    top: 8px;
+    left: 8px;
+    border-bottom: none;
+    pointer-events: none;
+    font-weight: normal;
+}
+
+#message.success:before
+{
+    color: hsla(125, 100%, 50%, 0.95);
+    content: "\f00c";
+}
+
+#message.warning:before
+{
+    color: hsla(52, 100%, 60%, 0.95);
+    content: "\f071";
+}
+
+#message.alert:before
+{
+    color: hsla(5, 100%, 75%, 1);
+    content: "\f057";
+}
+
+#message.info:before
+{
+    color: hsla(207, 87%, 85%, 0.95);
+    content: "\f05a";
+}

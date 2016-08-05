@@ -1,0 +1,299 @@
+@import url(//fonts.googleapis.com/css?family=Oswald:400,700);
+
+/* Google Maps Canvas Styles */
+aside#map-canvas
+{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    float: right;
+    margin: 10px;
+}
+
+/* Event Information Styles */
+aside#upcoming_events
+{
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    float: right;
+    display: block;
+    width: 350px;
+}
+
+#upcoming_event_days
+{
+    position: relative;
+}
+
+.upcoming_event_day
+{
+    position: relative;
+}
+
+.upcoming_event
+{
+    position: relative;
+}
+
+.upcoming_event_list
+{
+    position: relative;
+    padding-left: 50px;
+    min-height: 65px;
+}
+
+.upcoming_event a.eventlink
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 5;
+}
+
+.upcoming_event i.fa
+{
+    text-align: center;
+    margin-right: 5px;
+    width: 16px;
+}
+
+.cal-icon-container
+{
+    height: 125px;
+    width: 90px;
+    padding: 10px 5px 5px 10px;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    display: block;
+    position: absolute;
+    float: left;
+    margin-right: 5px;
+}
+
+.cal-icon-container.small
+{
+    height: 63px;
+    width: 45px;
+    padding: 5px 2px 2px 5px;
+}
+
+.cal-icon-container .cal-icon
+{
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-transform: skewY(-8deg);
+    -ms-transform: skewY(-8deg);
+    -moz-transform: skewY(-8deg);
+    -o-transform: skewY(-8deg);
+    transform: skewY(-8deg);
+    background-color: #f9f9f9;
+    box-shadow: -1px -0.33px 0 #ebebeb,
+    -2px -0.67px 0 #ebebeb,
+    -3px -1px 0 #ebebeb,
+    -4px -1.33px 0 #ebebeb,
+    -5px -1.67px 0 #ebebeb,
+    -6px -2px 0 #ebebeb,
+    -7px -2.33px 0 #ebebeb,
+    -8px -2.67px 0 #ebebeb;
+}
+
+.cal-icon-container.small .cal-icon
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: -1px -0.33px 0 #ebebeb,
+    -2px -0.37px 0 #ebebeb,
+    -3px -1px 0 #ebebeb,
+    -4px -1.33px 0 #ebebeb;
+}
+
+.cal-icon-container .cal-icon-banner
+{
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #f9f9f9;
+    background-color: #c20000;
+    box-shadow: -1px -0.33px 0 #b00000,
+    -2px -0.67px 0 #b00000,
+    -3px -1px 0 #b00000,
+    -4px -1.33px 0 #b00000,
+    -5px -1.67px 0 #b00000,
+    -6px -2px 0 #b00000,
+    -7px -2.33px 0 #b00000,
+    -8px -2.67px 0 #b00000;
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+    padding: 4px 0;
+}
+
+.cal-icon-container.small .cal-icon-banner
+{
+    box-shadow: -1px -0.33px 0 #b00000,
+    -2px -0.67px 0 #b00000,
+    -3px -1px 0 #b00000,
+    -4px -1.33px 0 #b00000;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    padding: 2px 0;
+}
+
+.cal-icon-container .cal-icon-month
+{
+    text-transform: uppercase;
+    margin-left: 4px;
+}
+
+.cal-icon-container.small .cal-icon-month
+{
+    text-align: center;
+    margin-left: 0;
+}
+
+.cal-icon-container .cal-icon-dow
+{
+    font-size: 1rem;
+    position: absolute;
+    margin: 2px 6px 2px 2px;
+    padding: 2px 4px;
+    font-weight: bold;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #000;
+    top: 0;
+    right: 0;
+    display: inline-block;
+}
+
+.cal-icon-container.small .cal-icon-dow
+{
+    display: none;
+}
+
+.cal-icon-container .cal-icon-body
+{
+    font-size: 4.25rem;
+    line-height: 5rem;
+    text-align: center;
+    font-weight: bold
+}
+
+.cal-icon-container.small .cal-icon-body
+{
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+#event_info
+{
+    position: relative;
+    padding-left: 100px;
+    min-height: 130px;
+}
+
+#event_info li
+{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Header Icon */
+h1 i
+{
+    text-align: left;
+    margin-right: 10px;
+}
+
+/* Buttons */
+#cal-back-button
+{
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #002166;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    min-height: 40px;
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+#cal-back-button a
+{
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+#cal-add-button
+{
+    line-height: 18px;
+    font-size: 18px !important;
+    background-color: #002166;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 5px auto;
+    text-align: center;
+    display: inline-block;
+    font-weight: normal;
+}
+
+table#cal .calheader aside#cal-add-button-container
+{
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
+#cal-add-button a
+{
+    display: block;
+    padding: 3px 10px 6px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+#cal-add-howto
+{
+    display: inline-block;
+}
+
+#cal-add-howto a:link,
+#cal-add-howto a:visited
+{
+    color: rgba(153, 153, 255, 0.5);
+}
+
+#cal-add-howto a:active,
+#cal-add-howto a:hover
+{
+    color: rgb(153, 153, 255);
+    cursor: help;
+}
+
+/* Description */
+#event_desc
+{
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    text-align: justify;
+    margin: 10px;
+}

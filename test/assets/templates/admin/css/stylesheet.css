@@ -1,0 +1,123 @@
+html
+{
+    height: 100%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html *
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #baa997;
+    color: #111;
+    height: 100%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    font: normal normal 12pt 'Open Sans', sans-serif;
+}
+
+h1
+{
+    font: normal bold 1.5em "Open Sans", sans-serif;
+}
+
+input,
+select,
+textarea
+{
+    font: normal normal 1em "Open Sans", sans-serif;
+}
+
+input.short
+{
+    width: 100px;
+}
+
+input.long
+{
+    width: 400px;
+}
+
+textarea.small
+{
+    width: 250px;
+    height: 125px;
+}
+
+textarea.big
+{
+    width: 600px;
+    height: 450px;
+}
+
+table tbody th,
+table tbody td
+{
+    text-align: left;
+    vertical-align: top;
+}
+
+div.examples
+{
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    background-color: #9eff81;
+    color: #48653f;
+    font: italic normal 0.8em "Open Sans", sans-serif;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+code
+{
+    font: normal normal 1em "Courier New", Courier, monospace;
+}
+
+span.required
+{
+    display: inline-block;
+    float: right;
+    position: relative;
+    color: #f00;
+}
+
+p
+{
+    margin: 0 0 10px;
+}
+
+a
+{
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dotted #111;
+}
+
+a[href^="mailto"]
+{
+    position: relative;
+    padding-left: 20px;
+}
+
+a[href^="mailto"]:before
+{
+    position: absolute;
+    font-family: FontAwesome;
+    top: 3px;
+    left: 0;
+    border-bottom: none;
+    content: "\f0e0";
+}

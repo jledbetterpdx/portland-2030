@@ -1,0 +1,154 @@
+table#cal
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+table#cal .calheader
+{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+}
+
+table#cal .calheader .calnav
+{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 10px;
+    color: #026;
+    background-color: #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table#cal .calheader span.calnav
+{
+    cursor: not-allowed;
+}
+
+table#cal .caldow,
+table#cal .calday
+{
+    width: 14.2857%;
+}
+
+table#cal .calday
+{
+    border: 1px solid #000;
+    height: 150px;
+}
+
+table#cal .calday .caldaynum
+{
+    padding: 3px;
+    margin: 0 auto 0 0;
+}
+
+table#cal .calday .caldaynum:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table#cal .calday.other
+{
+    background-color: #ddd;
+}
+
+table#cal .calday.today
+{
+    background-color: #dff;
+}
+
+table#cal .calday.other .caldaynum
+{
+    color: #444;
+    font-style: italic;
+}
+
+table#cal .calday.other .calevent
+{
+    opacity: 0.6;
+}
+
+table#cal .calevent
+{
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #000;
+    margin: 3px;
+    padding: 3px;
+    line-height: 0.95em;
+    position: relative;
+    border: 1px solid #a0a0a0;
+}
+
+table#cal .calevent.fundraising
+{
+    background-color: #cda;
+    border-color: #87df3d;
+}
+
+table#cal .calevent.visitation
+{
+    background-color: #ecf;
+    border-color: #d78ffc;
+}
+
+table#cal .calevent.meeting
+{
+    background-color: #cef;
+    border-color: #64cefc;
+}
+
+table#cal .calevent.volunteering
+{
+    background-color: #fee1d1;
+    border-color: #f78466;
+}
+
+table#cal .calevent.social
+{
+    background-color: #ff9;
+    border-color: #ffd400;
+}
+
+table#cal .calevent .callink
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+table#cal .calevent .caleventname
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+table#cal .calevent .caleventstatus,
+table#cal .calevent .caleventtype,
+table#cal .calevent .caleventtime,
+table#cal .calevent .caleventloc
+{
+    font-size: 0.9em;
+    text-indent: -12px;
+    margin-left: 20px;
+}
+
+table#cal .calevent i.fa
+{
+    width: 16px;
+    text-align: center;
+    margin-right: -4px;
+}

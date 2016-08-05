@@ -1,0 +1,58 @@
+body
+{
+    background-color: #fff;
+    color: #000;
+    margin: 8px;
+    font-size: 1em;
+}
+
+q.menu
+{
+    font-style: italic;
+}
+
+q.button
+{
+    font-weight: bold;
+}
+
+/* GUI elements */
+
+#close-window
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#close-window a
+{
+    display: inline-block;
+    padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #c4c4c4;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Popup Specific Styles */
+.software-instructions
+{
+    display: none;
+}
+
+.software-instructions.show
+{
+    display: block;
+}
+
+#software-default
+{
+    text-align: center;
+    line-height: 100px;
+    font-style: italic;
+    color: #aaa;
+    height: 100px;
+}
