@@ -1,13 +1,13 @@
 <?php
 
+/* API Keys */
+require_once('keys.php');
+
 /* Global definitions */
 if (!defined('GLOBAL_SYSPATH')) define('GLOBAL_SYSPATH', ROOT . '/_ci/2.1.4/system');
 define('GLOBAL_TIMEZONE', 'America/Los_Angeles');
 define('GLOBAL_TEMPLATE', 'default');
 define('GLOBAL_TITLE_SEPARATOR', ' // ');
-
-/* API Keys */
-define('API_KEY_GOOGLE_MAPS', 'AIzaSyBjXbI09s8xCEtNGinja9g-ERd4I4SHt1Y');
 
 /* Path declarations */
 define('SEP', '/');
