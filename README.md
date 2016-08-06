@@ -4,7 +4,7 @@ This is the source code for the [test website](http://test.portland2030.org) of 
 ## Included Directories
 * `/_ci` -- The global system directory
   * Contains shared CI system files used by both test and prod sites (excluded)
-    * Each CI version is stored in a separate directory (e.g., `/_ci/2.1.4` for CI v2.1.4 files) -- allows me to upgrade CI versions independently on test and prod; current CI version is **2.2.2**.
+    * Each CI version is stored in a separate directory (e.g., `/_ci/2.1.4` for CI v2.1.4 files) -- allows me to upgrade CI versions independently on test and prod; current CI version is **2.2.6**.
   * Contains `global.php`, which sets sitewide constants and forces a timezone in case the server's TZ isn't set properly
   * Contains `keys.php` (excluded), which stores public/private API keys for third-party libraries as constants
 * `/test` -- The test website, excluding any unaltered CI app files
@@ -27,7 +27,6 @@ This is the source code for the [test website](http://test.portland2030.org) of 
 * Make "add to calendar" always add all events to calendar -- useful for tracking updates
 * Add newsletter download to homepage
 * Add documents section
-* Upgrade to CI v2.2.6
 * Update officer information for 2016-17 term
 * Complete basic blog ("Flockblog" or perhaps "Flog"?) functionality
   * Add and edit blog entries with WYSIWYG editor
