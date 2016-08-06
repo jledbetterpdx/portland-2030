@@ -14,8 +14,7 @@
         <link rel="stylesheet" href="<?=$src ?>" />
 <?      endforeach; ?>
 <?  endif; ?>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <?  if (!empty($page['js']) && is_array($page['js'])): ?>
     <?      foreach ($page['js'] as $src): ?>
         <script src="<?=$src ?>"></script>
