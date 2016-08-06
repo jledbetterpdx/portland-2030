@@ -27,6 +27,7 @@ This is the source code for the [test website](http://test.portland2030.org) of 
 * Make "add to calendar" always add all events to calendar -- useful for tracking updates
 * Add newsletter download to homepage
 * Add documents section
+* Upgrade to CI v2.2.6
 * Update officer information for 2016-17 term
 * Complete basic blog ("Flockblog" or perhaps "Flog"?) functionality
   * Add and edit blog entries with WYSIWYG editor
@@ -40,6 +41,7 @@ This is the source code for the [test website](http://test.portland2030.org) of 
   * Add awards, more pins, T-shirt designs from past years
   
 ## Long Term To-Do
+* Upgrade to CI v3.x
 * Create page factory (library) to standardize members area view logic
 * Redesign homepage to add image rotator, cinegraphs, more modern look
   * Integrate Bootstrap sitewide
