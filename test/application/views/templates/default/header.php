@@ -10,7 +10,7 @@
         <link href="//fonts.googleapis.com/css?family=Alegreya+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="/assets/fonts/mono-social-icons-1.10.css" rel="stylesheet" type="text/css" />
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="//modernizr.com/downloads/modernizr-latest.js"></script>
 <?  if (!empty($page['js'])): ?>
 <?      foreach ($page['js'] as $js): ?>
